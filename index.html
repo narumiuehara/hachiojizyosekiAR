@@ -14,6 +14,11 @@
     <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIは非表示） -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 
+      <!--画像ファイルの読み込み-->
+      <a-assets>
+        <img id="sozai1" src="./hachi1/sozai1.png">
+      </a-assets>
+
       <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
       <a-marker preset="hiro">
         <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
@@ -21,9 +26,7 @@
       </a-marker>
 <!-- ③ 作成したマーカーでのソース -->
      
-      <a-assets>
-        <img id="sozai1" src="./hachi1/sozai1.png">
-      </a-assets>
+      
 
 
       <a-marker type='pattern' url='./hachi1/sozai1.patt'>
